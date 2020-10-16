@@ -6,7 +6,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ### MR (802.1X, MAB and Adaptive Policy on MS390)
 
-| authentification                  | tested |                       hh |
+| authentification                  | tested | .                      . |
 | --- | --- | --- |
 
 
