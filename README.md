@@ -50,7 +50,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 </td></tr> </table>
 
 
-### Meraki Security Applioance  (MX)
+### Meraki Security Appliance  (MX)
 
 <table>
 <tr><th>802.1X </th></tr>
