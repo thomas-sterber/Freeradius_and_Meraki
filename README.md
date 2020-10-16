@@ -29,11 +29,26 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ### MS (802.1X, MAB)
 
-| authentification                          | tested |
-| ----------------------------------------  | ------ |
-| 802.1X                                    | yes    |
-| 802.1X and vlan assignment                | no     | 
-| 802.1X and AccessGroupPolicy assignment   | no     |   
+<table>
+<tr><th>802.1X </th><th>MAB</th></tr>
+<tr><td>
+
+| authentification                  | tested | 
+| --------------------------------  | ------ |
+| 802.1X                            | yes | 
+| 802.1X and vlan assignment        | yes |
+| 802.1X and GroupPolicy assignment | yes |
+
+</td><td>
+
+| authentification                  | tested | 
+| --------------------------------  | ------ |
+| MAB                               | yes |
+| MAB and vlan assignment           | yes |
+| MAB and GroupPolicy assignment    | yes |
+
+</td></tr> </table>
+
 
 ### MX  (802.1X)
 
@@ -44,10 +59,13 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ### Adaptive Policy SGT assignment
 
-| authentification                  | tested |
-| --------------------------------- | ------ |
-| SGT assignment                    | no     |
-| SGT and GroupPolicy assignment    | no     |
+| devive |authentification                | tested |
+| --------------------------------------- | ------ |
+| MS390 | 802.1X and SGT assignment       | no     |
+| MS390 | MAB  and SGT assignment         | no     |
+| ----- | ------------------------------- | -------|
+| MR55 | 802.1X and SGT assignment        | no     |
+| MS55 | MAB  and SGT assignment          | no     |
 
 
 
