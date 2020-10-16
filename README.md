@@ -60,7 +60,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 ### Adaptive Policy SGT assignment
 
 | device | authentication                  | tested |
-| ---------------------------------------- | ------ |
+| ------ | ------------------------------- | ------ |
 | MS390  | 802.1X and SGT assignment       | no     |
 | MS390  | MAB  and SGT assignment         | no     |
 | -----  | ------------------------------- | -------|
