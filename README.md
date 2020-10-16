@@ -4,9 +4,9 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ## Tested setups
 
-MR (802.1X, MAB and Adaptive Policy on MS390)
+### MR (802.1X, MAB and Adaptive Policy on MS390)
 
-| authentification                  | tested |
+| authentification                  | tested |           | authentification                  | tested |
 | --------------------------------  | ------ |
 | 802.1X                            | yes | 
 | 802.1X and vlan assignment        | yes |
@@ -20,11 +20,20 @@ MR (802.1X, MAB and Adaptive Policy on MS390)
 | SGT and GroupPolicy assignment    | no  |
 
 
-MS
-802.1X, 802.1X and vlan assignment, 802.1X and AccessGroupPolicy assignment
+### MS (802.1X, MAB and Adaptive Policy Wifi6 MR's)
 
-MX
-802.1X 
+| authentification                          | tested |
+| ----------------------------------------  | ------ |
+| 802.1X                                    | yes    |
+| 802.1X and vlan assignment                | no     | 
+| 802.1X and AccessGroupPolicy assignment   | no     |   
+
+### MX  (802.1X)
+
+| authentification    | tested |
+| ------------------- | ------ |
+| 802.1X              | yes    |
+
 
 
 ## preparation of Raspian
