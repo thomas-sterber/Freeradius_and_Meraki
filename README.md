@@ -15,7 +15,6 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 | 802.1X                            | yes | 
 | 802.1X and vlan assignment        | yes |
 | 802.1X and GroupPolicy assignment | yes |
-| --------------------------------- | --- |
 
 </td><td>
 
@@ -24,7 +23,6 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 | MAB                               | yes |
 | MAB and vlan assignment           | yes |
 | MAB and GroupPolicy assignment    | yes |
-| --------------------------------- | --- |
 
 </td></tr> </table>
 
