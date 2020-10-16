@@ -50,11 +50,17 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 </td></tr> </table>
 
 
-### MX  (802.1X)
+### MX
 
-| authentication      | tested |
+<table>
+<tr><th>802.1X </th><th>MAB</th></tr>
+<tr><td>
+  
+| device              | tested |
 | ------------------- | ------ |
-| 802.1X              | yes    |
+| MX65                | yes    |
+
+</td></tr> </table>
 
 
 ### Adaptive Policy SGT assignment
