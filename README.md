@@ -4,11 +4,11 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ## Tested setups
 
-### MR (802.1X, MAB and Adaptive Policy on MS390)
+### MR (802.1X, MAB)
 
-| authentification                  | tested | \ \ \ \ \ \ \ \ \ \ \ | test |
-| --- | --- | --- | --- |
-
+<table>
+<tr><th>802.1X </th><th>MB</th></tr>
+<tr><td>
 
 | authentification                  | tested | 
 | --------------------------------  | ------ |
@@ -16,15 +16,20 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 | 802.1X and vlan assignment        | yes |
 | 802.1X and GroupPolicy assignment | yes |
 | --------------------------------- | --- |
+
+</td><td>
+
+| authentification                  | tested | 
+| --------------------------------  | ------ |
 | MAB                               | yes |
 | MAB and vlan assignment           | yes |
 | MAB and GroupPolicy assignment    | yes |
 | --------------------------------- | --- |
-| SGT assignment                    | no  |
-| SGT and GroupPolicy assignment    | no  |
+
+</td></tr> </table>
 
 
-### MS (802.1X, MAB and Adaptive Policy Wifi6 MR's)
+### MS (802.1X, MAB)
 
 | authentification                          | tested |
 | ----------------------------------------  | ------ |
@@ -38,6 +43,12 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 | ------------------- | ------ |
 | 802.1X              | yes    |
 
+
+### Adaptive Policy SGT assignment
+| --------------------------------- | --- |
+| SGT assignment                    | no  |
+| SGT and GroupPolicy assignment    | no  |
+| --------------------------------- | --- |
 
 
 ## preparation of Raspian
