@@ -7,7 +7,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 ### MR (802.1X, MAB)
 
 <table>
-<tr><th>802.1X </th><th>MB</th></tr>
+<tr><th>802.1X </th><th>MAB</th></tr>
 <tr><td>
 
 | authentification                  | tested | 
@@ -45,10 +45,11 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 
 ### Adaptive Policy SGT assignment
+
 | --------------------------------- | --- |
 | SGT assignment                    | no  |
 | SGT and GroupPolicy assignment    | no  |
-| --------------------------------- | --- |
+
 
 
 ## preparation of Raspian
