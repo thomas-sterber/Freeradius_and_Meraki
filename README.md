@@ -1,10 +1,10 @@
-# Using Freeradius for Meraki on Debian based systems , Raspian
+# Using Freeradius for Meraki on Raspberry
 
 This guide is to easily setup a Freeradius which can be used as a AAA for a Meraki authentication tests in your LAB or POC.
 
 ## installation instructions
 
-### preparation of Raspian
+### prepare Raspberry
 - install fresh Raspian OS
 - enable ssh
 - enable ssh for root
