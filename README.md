@@ -4,7 +4,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ## Tested setups
 
-### MR (802.1X, MAB)
+### Meraki Wireless   (MR)
 
 <table>
 <tr><th>802.1X </th><th>MAB</th></tr>
@@ -27,7 +27,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 </td></tr> </table>
 
 
-### MS (802.1X, MAB)
+### Meraki Switching  (MS)
 
 <table>
 <tr><th>802.1X </th><th>MAB</th></tr>
@@ -50,10 +50,10 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 </td></tr> </table>
 
 
-### MX
+### Meraki Security Applioance  (MX)
 
 <table>
-<tr><th>802.1X </th><th>MAB</th></tr>
+<tr><th>802.1X </th></tr>
 <tr><td>
   
 | device              | tested |
