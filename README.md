@@ -44,9 +44,10 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ### Adaptive Policy SGT assignment
 
-| --------------------------------- | --- |
-| SGT assignment                    | no  |
-| SGT and GroupPolicy assignment    | no  |
+| authentification                  | tested |
+| --------------------------------- | ------ |
+| SGT assignment                    | no     |
+| SGT and GroupPolicy assignment    | no     |
 
 
 
