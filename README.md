@@ -10,7 +10,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 <tr><th>802.1X </th><th>MAB</th></tr>
 <tr><td>
 
-| authentification                  | tested | 
+| authentication                    | tested | 
 | --------------------------------  | ------ |
 | 802.1X                            | yes | 
 | 802.1X and vlan assignment        | yes |
@@ -18,7 +18,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 </td><td>
 
-| authentification                  | tested | 
+| authentication                    | tested | 
 | --------------------------------  | ------ |
 | MAB                               | yes |
 | MAB and vlan assignment           | yes |
@@ -33,7 +33,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 <tr><th>802.1X </th><th>MAB</th></tr>
 <tr><td>
 
-| authentification                  | tested | 
+| authentication                    | tested | 
 | --------------------------------  | ------ |
 | 802.1X                            | yes | 
 | 802.1X and vlan assignment        | yes |
@@ -41,7 +41,7 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 </td><td>
 
-| authentification                  | tested | 
+| authentication                    | tested | 
 | --------------------------------  | ------ |
 | MAB                               | yes |
 | MAB and vlan assignment           | yes |
@@ -52,20 +52,20 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ### MX  (802.1X)
 
-| authentification    | tested |
+| authentication      | tested |
 | ------------------- | ------ |
 | 802.1X              | yes    |
 
 
 ### Adaptive Policy SGT assignment
 
-| devive |authentification                | tested |
+| devic | authentication                  | tested |
 | --------------------------------------- | ------ |
 | MS390 | 802.1X and SGT assignment       | no     |
 | MS390 | MAB  and SGT assignment         | no     |
 | ----- | ------------------------------- | -------|
-| MR55 | 802.1X and SGT assignment        | no     |
-| MS55 | MAB  and SGT assignment          | no     |
+| MR55  | 802.1X and SGT assignment       | no     |
+| MS55  | MAB  and SGT assignment         | no     |
 
 
 
