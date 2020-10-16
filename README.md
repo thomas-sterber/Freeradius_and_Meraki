@@ -29,8 +29,6 @@ clients.conf
 
 ## supported setups
 
-### Meraki Wireless   (MR)
-
 
 | authentication                    | MR   | MS  | MX  | 
 | --------------------------------  | -----| --- | --- |
