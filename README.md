@@ -44,7 +44,7 @@ clients.conf
 | MAB  and SGT assignment           | tbd | | |
 |||
 
-tetsted:
+tested:
 - MR55
 - MS220-8P, MS350
 - MX65
