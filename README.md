@@ -31,72 +31,27 @@ clients.conf
 
 ### Meraki Wireless   (MR)
 
-<table>
-<tr><th>802.1X </th><th>MAB</th></tr>
-<tr><td>
 
-| authentication                    | supported | 
-| --------------------------------  | ------ |
-| 802.1X                            | yes | 
-| 802.1X and vlan assignment        | yes |
-| 802.1X and GroupPolicy assignment | yes |
+| authentication                    | MR   | MS  | MX  | 
+| --------------------------------  | -----| --- | --- |
+| 802.1X                            | yes  | yes | yes |
+| 802.1X and vlan assignment        | yes  | yes | |
+| 802.1X and GroupPolicy assignment | yes  | yes | |
+||| 
+| MAB                               | yes | yes  | |
+| MAB and vlan assignment           | yes | yes  | |
+| MAB and GroupPolicy assignment    | yes | yes  | |
+|||
+| 802.1X and SGT assignment         | tbd | | |
+| MAB  and SGT assignment           | tbd | | |
+|||
 
-</td><td>
+tetsted:
+- MR55
+- MS220-8P, MS350
+- MX65
+- AdaptivePolicy SGT assignment:  MR45, MS390
 
-| authentication                    | supported | 
-| --------------------------------  | ------ |
-| MAB                               | yes |
-| MAB and vlan assignment           | yes |
-| MAB and GroupPolicy assignment    | yes |
-
-</td></tr> </table>
-
-
-### Meraki Switching  (MS)
-
-<table>
-<tr><th>802.1X </th><th>MAB</th></tr>
-<tr><td>
-
-| authentication                    | supported | 
-| --------------------------------  | ------ |
-| 802.1X                            | yes | 
-| 802.1X and vlan assignment        | yes |
-| 802.1X and GroupPolicy assignment | yes |
-
-</td><td>
-
-| authentication                    | supported | 
-| --------------------------------  | ------ |
-| MAB                               | yes |
-| MAB and vlan assignment           | yes |
-| MAB and GroupPolicy assignment    | yes |
-
-</td></tr> </table>
-
-
-### Meraki Security Appliance  (MX)
-
-<table>
-<tr><th>802.1X </th></tr>
-<tr><td>
-  
-| device              | supported |
-| ------------------- | ------ |
-| MX65                | yes    |
-
-</td></tr> </table>
-
-
-### Adaptive Policy SGT assignment
-
-| device | authentication                  | supported |
-| ------ | ------------------------------- | ------ |
-| MS390  | 802.1X and SGT assignment       | no     |
-| MS390  | MAB  and SGT assignment         | no     |
-|        |                                 |        |
-| MR55   | 802.1X and SGT assignment       | no     |
-| MS55   | MAB  and SGT assignment         | no     |
 
 
 
