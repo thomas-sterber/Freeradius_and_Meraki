@@ -4,7 +4,10 @@ This guide is to easily setup a Freeradius in your lab which can be used as a AA
 
 ## Tested setups
 MR
-802.1X, 802.1X and vlan assignment, 802.1X and GroupPolicy assignment
+-authentification | tested
+- 802.1X | yes 
+- 802.1X and vlan assignment | yes
+- 802.1X and GroupPolicy assignment | yes
 MAB, MAB and vlan assignment, MAB and GroupPolicy assignment
 
 MS
