@@ -3,13 +3,22 @@
 This guide is to easily setup a Freeradius in your lab which can be used as a AAA for a Meraki environment.
 
 ## Tested setups
-MR
--.authentification |. tested
-802.1X | yes 
-802.1X and vlan assignment | yes
-802.1X and GroupPolicy assignment | yes
 
-MAB, MAB and vlan assignment, MAB and GroupPolicy assignment
+MR (802.1X, MAB and Adaptive Policy on MS390)
+
+| authentification                  | tested |
+| --------------------------------  | ------ |
+| 802.1X                            | yes | 
+| 802.1X and vlan assignment        | yes |
+| 802.1X and GroupPolicy assignment | yes |
+| --------------------------------- | --- |
+| MAB                               | yes |
+| MAB and vlan assignment           | yes |
+| MAB and GroupPolicy assignment    | yes |
+| --------------------------------- | --- |
+| SGT assignment                    | no  |
+| SGT and GroupPolicy assignment    | no  |
+
 
 MS
 802.1X, 802.1X and vlan assignment, 802.1X and AccessGroupPolicy assignment
