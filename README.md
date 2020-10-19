@@ -40,6 +40,10 @@ clients.conf
 | MAB and vlan assignment           | yes | yes  | |
 | MAB and GroupPolicy assignment    | yes | yes  | |
 |||
+| iPSK                              | yes | | |
+| iPSK and vlan assignment          | yes | | |
+| iPSK and GroupPolicy assignment   | yes | | |
+|||
 | 802.1X and SGT assignment         | tbd | | |
 | MAB  and SGT assignment           | tbd | | |
 |||
