@@ -45,10 +45,15 @@ clients.conf
 | iPSK                              | yes | | |
 | iPSK and vlan assignment          | yes | | |
 | iPSK and GroupPolicy assignment   | yes | | |
-|||
-| 802.1X and SGT assignment         | tbd | | |
-| MAB  and SGT assignment           | tbd | | |
-|||
+
+
+Adaptive Policy
+
+| authentication                    | MR   | MS 390  | 
+| --------------------------------  | -----| --- |
+| 802.1X and SGT assignment         | tbd | tbd |
+| MAB  and SGT assignment           | tbd | tbd |
+
 
 tested:
 - MR55
