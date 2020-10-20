@@ -41,7 +41,6 @@ clients.conf
 | MAB and vlan assignment           | yes | yes  | |
 | MAB and GroupPolicy assignment    | yes | | |
 | MAB and GroupPolicyACL assignment    | | tbd | |
-
 |||
 | iPSK                              | yes | | |
 | iPSK and vlan assignment          | yes | | |
