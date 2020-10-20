@@ -34,11 +34,14 @@ clients.conf
 | --------------------------------  | -----| --- | --- |
 | 802.1X                            | yes  | yes | yes |
 | 802.1X and vlan assignment        | yes  | yes | |
-| 802.1X and GroupPolicy assignment | yes  | yes | |
+| 802.1X and GroupPolicy assignment | yes  | | |
+| 802.1X and GroupPolicyACL assignment | | tbd | |
 ||| 
 | MAB                               | yes | yes  | |
 | MAB and vlan assignment           | yes | yes  | |
-| MAB and GroupPolicy assignment    | yes | yes  | |
+| MAB and GroupPolicy assignment    | yes | | |
+| MAB and GroupPolicyACL assignment    | | tbd | |
+
 |||
 | iPSK                              | yes | | |
 | iPSK and vlan assignment          | yes | | |
