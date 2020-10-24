@@ -52,7 +52,7 @@ clients.conf
 
 Adaptive Policy
 
-| authentication                    | MR   | MS 390  |
+| authentication                    | MR   | MS 390|
 |                                   |(27.5)|(14.4)|
 | --------------------------------  | -----| --- |
 | 802.1X and SGT assignment         | tbd | tbd |
