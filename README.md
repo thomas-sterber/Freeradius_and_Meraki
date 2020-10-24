@@ -27,39 +27,38 @@ clients.conf
 ...
 
 
-## supported setups
+## tested setups
 
 
-| authentication                    | MR   | MS  | MX  | 
+| authentication                    | MR55 | MS350| MX65|
+|                                   |(27.5)|(14.4)|(15.38)|
 | --------------------------------  | -----| --- | --- |
 | 802.1X                            | yes  | yes | yes |
-| 802.1X and vlan assignment        | yes  | yes | |
-| 802.1X and GroupPolicy assignment | yes  | | |
-| 802.1X and GroupPolicyACL assignment | | tbd | |
+| 802.1X + VLAN                     | yes  | yes | |
+| 802.1X + GroupPolicy              | yes  | | |
+| 802.1X + GroupPolicyACL           | | tbd | |
+| 802.1X + VLAN + GroupPolicyACL    | | tbd | |
 ||| 
 | MAB                               | yes | yes  | |
-| MAB and vlan assignment           | yes | yes  | |
-| MAB and GroupPolicy assignment    | yes | | |
-| MAB and GroupPolicyACL assignment    | | tbd | |
+| MAB + VLAN                        | yes | yes  | |
+| MAB + GroupPolicy                 | yes | | |
+| MAB + GroupPolicyACL              | | tbd | |
+| MAB + VLAN + GroupPolicyACL       | | tbd | |
 |||
 | iPSK                              | yes | | |
-| iPSK and vlan assignment          | yes | | |
-| iPSK and GroupPolicy assignment   | yes | | |
+| iPSK + VLAN                       | yes | | |
+| iPSK + GroupPolicy                | yes | | |
 
 
 Adaptive Policy
 
-| authentication                    | MR   | MS 390  | 
+| authentication                    | MR   | MS 390  |
+|                                   |(27.5)|(14.4)|
 | --------------------------------  | -----| --- |
 | 802.1X and SGT assignment         | tbd | tbd |
 | MAB  and SGT assignment           | tbd | tbd |
 
 
-tested:
-- MR55
-- MS220-8P, MS350
-- MX65
-- AdaptivePolicy SGT assignment:  MR45, MS390
 
 
 
