@@ -30,8 +30,7 @@ clients.conf
 ## tested setups
 
 
-| authentication                    | MR55 | MS350| MX65|
-|                                   |(27.5)|(14.4)|(15.38)|
+| authentication                    | MR55 (27.5)| MS350 (14.4)| MX65 (15.38)|
 | --------------------------------  | -----| --- | --- |
 | 802.1X                            | yes  | yes | yes |
 | 802.1X + VLAN                     | yes  | yes | |
@@ -52,8 +51,7 @@ clients.conf
 
 Adaptive Policy
 
-| authentication                    | MR   | MS 390|
-|                                   |(27.5)|(14.4)|
+| authentication                    | MR (27.5)| MS 390 (14.4)|
 | --------------------------------  | -----| --- |
 | 802.1X and SGT assignment         | tbd | tbd |
 | MAB  and SGT assignment           | tbd | tbd |
