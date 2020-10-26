@@ -30,23 +30,23 @@ clients.conf
 ## tested setups
 
 
-| authentication                    | MR55 (27.5)| MS350 (14.4)| MX65 (15.38)|
-| --------------------------------  | -----| --- | --- |
-| 802.1X                            | yes  | yes | yes |
-| 802.1X + VLAN                     | yes  | yes | |
-| 802.1X + GroupPolicy              | yes  | | |
-| 802.1X + GroupPolicyACL           | | tbd | |
-| 802.1X + VLAN + GroupPolicyACL    | | tbd | |
+| authentication                    | MR55 (27.5)| MS350 (14.4)| MS390 (14.5)|MX65 (15.38)|
+| --------------------------------  | -----| --- || --- |
+| 802.1X                            | yes  | yes || yes |
+| 802.1X + VLAN                     | yes  | yes || |
+| 802.1X + GroupPolicy              | yes  | || |
+| 802.1X + GroupPolicyACL           | | tbd || |
+| 802.1X + VLAN + GroupPolicyACL    | | tbd || |
 ||| 
-| MAB                               | yes | yes  | |
-| MAB + VLAN                        | yes | yes  | |
-| MAB + GroupPolicy                 | yes | | |
-| MAB + GroupPolicyACL              | | tbd | |
-| MAB + VLAN + GroupPolicyACL       | | tbd | |
+| MAB                               | yes | yes  || |
+| MAB + VLAN                        | yes | yes  || |
+| MAB + GroupPolicy                 | yes | || |
+| MAB + GroupPolicyACL              | | tbd || |
+| MAB + VLAN + GroupPolicyACL       | | tbd || |
 |||
-| iPSK                              | yes | | |
-| iPSK + VLAN                       | yes | | |
-| iPSK + GroupPolicy                | yes | | |
+| iPSK                              | yes | || |
+| iPSK + VLAN                       | yes | || |
+| iPSK + GroupPolicy                | yes | || |
 
 
 Adaptive Policy
