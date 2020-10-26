@@ -32,26 +32,26 @@ clients.conf
 
 | authentication                    | MR55 (27.5)| MS350 (14.4)| MS390 (14.5)|MX65 (15.38)|
 | --------------------------------  | -----| --- |--- | --- |
-| 802.1X                            | yes  | yes || yes |
-| 802.1X + VLAN                     | yes  | yes || |
+| 802.1X                            | yes  | yes |to do| yes |
+| 802.1X + VLAN                     | yes  | yes |to do| |
 | 802.1X + GroupPolicy              | yes  | || |
-| 802.1X + GroupPolicyACL           | | tbd || |
-| 802.1X + VLAN + GroupPolicyACL    | | tbd || |
+| 802.1X + GroupPolicyACL           | | tbd |na| |
+| 802.1X + VLAN + GroupPolicyACL    | | tbd |na| |
 ||| 
-| MAB                               | yes | yes  || |
-| MAB + VLAN                        | yes | yes  || |
+| MAB                               | yes | yes  |to do| |
+| MAB + VLAN                        | yes | yes  |to do| |
 | MAB + GroupPolicy                 | yes | || |
-| MAB + GroupPolicyACL              | | tbd || |
-| MAB + VLAN + GroupPolicyACL       | | tbd || |
+| MAB + GroupPolicyACL              | | tbd |na| |
+| MAB + VLAN + GroupPolicyACL       | | tbd |na| |
 |||
 | iPSK                              | yes | || |
 | iPSK + VLAN                       | yes | || |
 | iPSK + GroupPolicy                | yes | || |
 
 
-Adaptive Policy
+Adaptive Policy  MS390
 
-| authentication                    | MR (27.5)| MS 390 (14.4)|
+| authentication                    | MR (27.5)| MS 390 (14.5)|
 | --------------------------------  | -----| --- |
 | 802.1X and SGT assignment         | tbd | tbd |
 | MAB  and SGT assignment           | tbd | tbd |
