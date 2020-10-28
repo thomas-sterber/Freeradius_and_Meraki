@@ -35,26 +35,27 @@ clients.conf
 | 802.1X                            | yes  | yes |yes| yes |
 | 802.1X + VLAN                     | yes  | yes |yes| |
 | 802.1X + GroupPolicy              | yes  | || |
-| 802.1X + GroupPolicyACL           | | tbd |na| |
-| 802.1X + VLAN + GroupPolicyACL    | | tbd |na| |
+| 802.1X + GroupPolicyACL           | | yes |na| |
+| 802.1X + VLAN + GroupPolicyACL    | | yes |na| |
 ||| 
 | MAB                               | yes | yes  |yes| |
 | MAB + VLAN                        | yes | yes  |yes| |
 | MAB + GroupPolicy                 | yes | || |
-| MAB + GroupPolicyACL              | | tbd |na| |
-| MAB + VLAN + GroupPolicyACL       | | tbd |na| |
+| MAB + GroupPolicyACL              | | yes |na| |
+| MAB + VLAN + GroupPolicyACL       | | yes |na| |
 |||
 | iPSK                              | yes | || |
 | iPSK + VLAN                       | yes | || |
 | iPSK + GroupPolicy                | yes | || |
+| iPSK + SGT                        | yes | || |
 
 
 Adaptive Policy  MS390
 
 | authentication                    | MR (27.5)| MS 390 (14.5)|
 | --------------------------------  | -----| --- |
-| 802.1X and SGT assignment         | todo | todo |
-| MAB  and SGT assignment           | todo | todo |
+| 802.1X and SGT assignment         | yes | yes |
+| MAB  and SGT assignment           | yes | yes |
 
 
 
