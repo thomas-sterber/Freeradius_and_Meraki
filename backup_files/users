@@ -1,0 +1,159 @@
+#
+# ---------------------------------------------------------------------------------------- #
+#    Mac Authentication
+# ---------------------------------------------------------------------------------------- #
+
+
+
+# MAC Auth                                               MR, MS  and MX
+# ----------------------------------------------------------------------
+9829a642667a		Cleartext-Password := "9829a642667a"
+
+
+
+# MAC Auth and vlan assignment                                 MR and MS
+# ----------------------------------------------------------------------
+9829a642667b		Cleartext-Password := "9829a642667b"
+			Tunnel-Medium-Type = 6,
+			Tunnel-Private-Group-ID = 10,
+			Tunnel-Type = VLAN
+
+
+
+# MAC Auth and GroupPolicy  assignment                            MR
+# ----------------------------------------------------------------------
+e82a44a133c1		Cleartext-Password := "e82a44a133c1"
+			Filter-ID := GroupPolicy_01
+
+
+
+# MAC Auth and MS GroupPolicyACL  assignment                       MS
+# ----------------------------------------------------------------------
+9829a642667c		Cleartext-Password := "9829a642667c"
+			Filter-ID := MSGroupPolicyACL_01
+
+
+
+# MAC Auth , VLAN and GroupPolicyACL  assignment                    MS
+# ----------------------------------------------------------------------
+9829a642667d		Cleartext-Password := "9829a642667d"
+			Filter-ID := MSGroupPolicyACL_01,
+			Tunnel-Medium-Type = 6,
+			Tunnel-Private-Group-ID = 10,
+			Tunnel-Type = VLAN
+
+
+
+
+
+# ---------------------------------------------------------------------------------------- #
+#    802.1X
+# ---------------------------------------------------------------------------------------- #
+
+
+# 802.1X                                                        MR and MS
+# ----------------------------------------------------------------------
+thomas			Cleartext-Password := "sterber"
+
+
+
+
+# 802.1X and VLAN assignment                                    MR and MS
+# -----------------------------------------------------------------------
+thomas1		        Cleartext-Password := "sterber"
+			Tunnel-Medium-Type = 6,
+			Tunnel-Private-Group-ID = 10,
+			Tunnel-Type = VLAN
+
+
+
+
+
+# 802.1X and GroupPolicy assignment                              MR
+# -----------------------------------------------------------------------
+thomas2   		Cleartext-Password := "sterber"
+			Filter-ID := GroupPolicy_01 
+
+
+
+
+# 802.1X and MS GroupPolicyACL assignment                           MS
+# -----------------------------------------------------------------------
+thomas3  		Cleartext-Password := "sterber"
+			Filter-ID := MSGroupPolicyACL_01
+
+
+
+
+# 802.1X and VLAN and MS GroupPolicyACL assignment                  MS
+# -----------------------------------------------------------------------
+thomas4  		Cleartext-Password := "sterber"
+			Filter-ID := MSGroupPolicyACL_01,
+			Tunnel-Medium-Type = 6,
+			Tunnel-Private-Group-ID = 10,
+			Tunnel-Type = VLAN
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------- #
+#  iPSK 
+# ---------------------------------------------------------------------------------------- #
+
+
+# iPSK  (! Tunnel-password == pre-shared password  , 8 characters min)     MR
+# -----------------------------------------------------------------------
+a45046d55355       	Cleartext-Password := "a45046d55355"
+			Tunnel-password = psk12345
+
+
+
+
+# iPSK and vlan 10 assignment                            MR
+# -----------------------------------------------------------------------
+a45046d55356       	Cleartext-Password := "a45046d55356"
+			Tunnel-password = psk12345,
+			Tunnel-Medium-Type = 6,
+			Tunnel-Private-Group-ID = 10,
+			Tunnel-Type = VLAN
+
+
+
+# iPSK and GroupPolicy_01 assignment                         MR
+# -----------------------------------------------------------------------
+a45046d55357       	Cleartext-Password := "a45046d55357"
+			Tunnel-password = psk12345,
+			Filter-ID := GroupPolicy_01
+
+
+
+
+
+
+# ---------------------------------------------------------------------------------------- #
+#   Adaptive Policy   SGT
+# ---------------------------------------------------------------------------------------- #
+
+
+
+# 802.1X  and SGT assignment      (SGT 100 = hex 0064)       MR Wifi 6 , MS 390
+# --------------------------------------------------------------------------------
+thomas5			Cleartext-Password := "sterber"
+			Cisco-AVPair = "cts:security-group-tag=0064-00"
+
+
+
+# MAB  and SGT assignment      (SGT 100 = hex 0064)       MR Wifi 6 , MS 390
+# --------------------------------------------------------------------------------
+9829a642667e		Cleartext-Password := "9829a642667e"
+			Cisco-AVPair = "cts:security-group-tag=0064-00"
+
+
+# iPSK and SGT (100) assignment                         MR
+# -----------------------------------------------------------------------
+a45046d55358       	Cleartext-Password := "a45046d55358"
+			Tunnel-password = psk12345,
+			Cisco-AVPair = "cts:security-group-tag=0064-00"
+
