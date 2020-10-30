@@ -91,7 +91,58 @@ Adaptive Policy  MS390
         		    This allows to configure the radius attributes direct in 'users'
 	            use_tunneled_reply = yes    
 
-            #sudo vim /etc/freeradius/3.0/radiusd.conf
-                change 'name = freeradius' to 'name = meraki-freeradius'
+            	#sudo vim /etc/freeradius/3.0/radiusd.conf
+                	change 'name = freeradius' to 'name = meraki-freeradius'
+
+#### Test your Freeradius Server
+
+	#sudo vim /etc/freeradius/3.0/clients.conf
+	
+		client localhost {
+			  ipaddr = 127.0.0.1
+			  secret  = secret123
+				   }
+
+	#sudo vim /etc/freeradius/3.0/users
+
+		thomas		Cleartext-Password := "sterber"
+
+
+	#sudo freeradius -X      (terminal 1)
+	#radtest thomas sterber 127.0.0.1 0 secret123      (terminal 2)
+			(user) (pwd) (server ip) (NAS Port) (secret)
+
+
+#### Configure Freeradius 'clients.conf'
+
+	#sudo vim /etc/freeradius/3.0/clients.conf
+
+	Trust all incoming requests (best practice for Lab environments)
+		client all {
+			ipaddr		= 0.0.0.0/0
+			secret		= secret123
+			}
+
+
+#### Configure Freeradius 'users'
+
+##### MAB	(MR, MS and MX)
+
+		a45046d55355		Cleartext-Password := "a45046d55355"
+		
+		
+##### MAB + VLAN 	(MR and MS)
+
+		9829a642667c		Cleartext-Password := "9829a642667c"
+					Tunnel-Medium-Type = 6,
+					Tunnel-Private-Group-ID = 10,
+					Tunnel-Type = VLAN
+
+
+##### MAB + GroupPolicy 
+
+		e82a44a133c1		Cleartext-Password := "e82a44a133c1"
+					Filter-ID := GroupPolicy_01
+
 
 
