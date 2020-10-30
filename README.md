@@ -170,13 +170,13 @@ Adaptive Policy  MS390
 		9829a642667c		Cleartext-Password := "9829a642667c"
 					Cisco-AVPair = "cts:security-group-tag=0064-00"
 
-##### iPSK
+##### iPSK		(MR)
 
 		a45046d55355       	Cleartext-Password := "a45046d55355"
 					Tunnel-password = psk12345
 
 
-##### iPSK + VLAN 
+##### iPSK + VLAN 		(MR)
 	>> VLAN 10
 
 		a45046d55355       	Cleartext-Password := "a45046d55355"
@@ -185,14 +185,14 @@ Adaptive Policy  MS390
 					Tunnel-Private-Group-ID = 10,
 					Tunnel-Type = VLAN
 
-##### iPSK + GroupPolicy 
+##### iPSK + GroupPolicy 		(MR)
 
 		a45046d55355       	Cleartext-Password := "a45046d55355"
 					Tunnel-password = psk12345,
 					Filter-ID := GPolicy_A
 
 
-##### iPSK + SGT (100)
+##### iPSK + SGT (100)		(MR)
 	>> SGT 100 = hex 0064
 	
 		a45046d55355       	Cleartext-Password := "a45046d55355"
@@ -200,12 +200,12 @@ Adaptive Policy  MS390
 					Cisco-AVPair = "cts:security-group-tag=0064-00"
 
 	
-##### 802.1X 
+##### 802.1X 		(MR, MS and MX)
 
 		thomas			Cleartext-Password := "sterber"
 
 
-##### 802.1X + VLAN 
+##### 802.1X + VLAN 	(MR, MS)
 	>> VLAN 10
 
 		thomas		        Cleartext-Password := "sterber"
@@ -214,19 +214,19 @@ Adaptive Policy  MS390
 					Tunnel-Type = VLAN
 
 
-##### 802.1X + GroupPolicy 
+##### 802.1X + GroupPolicy 	(MR)
 
 		thomas   		Cleartext-Password := "sterber"
 					Filter-ID := GroupPolicy_01
 
 
-##### 802.1X + GroupPolicyACL 
+##### 802.1X + GroupPolicyACL 	(MS)
 
 		thomas 			Cleartext-Password := "sterber"
 					Filter-ID := MSGroupPolicyACL_01
 
 
-##### 802.1X + VLAN + GroupPolicyACL 
+##### 802.1X + VLAN + GroupPolicyACL 	(MS)
 	>> VLAN 10
 		
 		thomas  		Cleartext-Password := "sterber"
@@ -236,7 +236,7 @@ Adaptive Policy  MS390
 					Tunnel-Type = VLAN
 
 
-##### 802.1X + SGT 100 
+##### 802.1X + SGT 100 		(MR and MS390)
 	>> SGT 100 = hex 0064
 	
 		thomas			Cleartext-Password := "sterber"
