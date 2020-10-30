@@ -132,6 +132,7 @@ Adaptive Policy  MS390
 		
 		
 ##### MAB + VLAN 	(MR and MS)
+	>> VLAN 10
 
 		9829a642667c		Cleartext-Password := "9829a642667c"
 					Tunnel-Medium-Type = 6,
@@ -139,10 +140,111 @@ Adaptive Policy  MS390
 					Tunnel-Type = VLAN
 
 
-##### MAB + GroupPolicy 
+##### MAB + GroupPolicy   (MR)
 
 		e82a44a133c1		Cleartext-Password := "e82a44a133c1"
 					Filter-ID := GroupPolicy_01
 
 
+##### MAB + GroupPolicyACL  (MS)
 
+		9829a642667c		Cleartext-Password := "9829a642667c"
+					Filter-ID := MSGroupPolicyACL_01
+
+
+##### MAB + VLAN + GroupPolicyACL  (MS)
+	>> VLAN 10
+
+		9829a642667c		Cleartext-Password := "9829a642667c"
+					Filter-ID := MSGroupPolicyACL_01,
+					Tunnel-Medium-Type = 6,
+					Tunnel-Private-Group-ID = 10,
+					Tunnel-Type = VLAN
+
+
+##### MAB + SGT 100  (MR Wifi-6 and MS390)
+	>> SGT 100 = hex 0064
+		
+		9829a642667c		Cleartext-Password := "9829a642667c"
+					Cisco-AVPair = "cts:security-group-tag=0064-00"
+
+##### iPSK
+
+		a45046d55355       	Cleartext-Password := "a45046d55355"
+					Tunnel-password = psk12345
+
+
+##### iPSK + VLAN 
+	>> VLAN 10
+
+		a45046d55355       	Cleartext-Password := "a45046d55355"
+					Tunnel-password = psk12345,
+					Tunnel-Medium-Type = 6,
+					Tunnel-Private-Group-ID = 10,
+					Tunnel-Type = VLAN
+
+##### iPSK + GroupPolicy 
+
+		a45046d55355       	Cleartext-Password := "a45046d55355"
+					Tunnel-password = psk12345,
+					Filter-ID := GPolicy_A
+
+
+##### iPSK + SGT (100)
+	>> SGT 100 = hex 0064
+	
+		a45046d55355       	Cleartext-Password := "a45046d55355"
+					Tunnel-password = psk12345,
+					Cisco-AVPair = "cts:security-group-tag=0064-00"
+
+	
+##### 802.1X 
+
+		thomas			Cleartext-Password := "sterber"
+
+
+##### 802.1X + VLAN 
+	>> VLAN 10
+
+		thomas		        Cleartext-Password := "sterber"
+					Tunnel-Medium-Type = 6,
+					Tunnel-Private-Group-ID = 10,
+					Tunnel-Type = VLAN
+
+
+##### 802.1X + GroupPolicy 
+
+		thomas   		Cleartext-Password := "sterber"
+					Filter-ID := GroupPolicy_01
+
+
+##### 802.1X + GroupPolicyACL 
+
+		thomas 			Cleartext-Password := "sterber"
+					Filter-ID := MSGroupPolicyACL_01
+
+
+##### 802.1X + VLAN + GroupPolicyACL 
+	>> VLAN 10
+		
+		thomas  		Cleartext-Password := "sterber"
+					Filter-ID := MSGroupPolicyACL_01,
+					Tunnel-Medium-Type = 6,
+					Tunnel-Private-Group-ID = 10,
+					Tunnel-Type = VLAN
+
+
+##### 802.1X + SGT 100 
+	>> SGT 100 = hex 0064
+	
+		thomas			Cleartext-Password := "sterber"
+					Cisco-AVPair = "cts:security-group-tag=0064-00"
+
+
+
+
+Have Fun !!
+
+
+	
+	
