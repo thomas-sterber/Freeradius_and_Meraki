@@ -55,22 +55,23 @@ Adaptive Policy  MS390
 #### Freeradius start/stop/autostart , Debug mode
 
         Check Freeradius service
-	    #sudo service freeradius status
-	    #pgrep freeradius
+		#sudo service freeradius status
+		#pgrep freeradius
 
         Stop service also disable autostart after boot
-	    #sudo service freeradius stop
+		#sudo service freeradius stop
 
         Start service also enable autostart after reboot
-	    #sudo service freeradius start
+		#sudo service freeradius start
         Start in Debug Mode
-	    # sudo service freeradius stop
-	    # sudo freeradius -X
+		# sudo service freeradius stop
+		# sudo freeradius -X
 
 #### Basic Freeradius Configuration
 
         ssh to the Raspberry and login.     (pi/meraki123)
-        >> Backup/move/clear orgiginal configs files
+        
+	>> Backup/move/clear orgiginal configs files
  
 	    #mkdir freeradius_backup
 	    #cd freeradius_backup
@@ -89,7 +90,8 @@ Adaptive Policy  MS390
          		    change two time 'use_tunneled_reply' to 'yes'
         		    (EAP-TTLS section and EAP-PEAP section)
         		    This allows to configure the radius attributes direct in 'users'
-	            use_tunneled_reply = yes    
+	            
+			use_tunneled_reply = yes    
 
             	#sudo vim /etc/freeradius/3.0/radiusd.conf
                 	change 'name = freeradius' to 'name = meraki-freeradius'
