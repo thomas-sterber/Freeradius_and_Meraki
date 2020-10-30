@@ -1,9 +1,12 @@
 # Using Freeradius for Meraki on Raspberry
 
-This guide is to easily setup a Freeradius which can be used as a AAA for a Meraki authentication tests in your Lab or POC.
+This guide is to easily setup a Freeradius which can be used as a AAA for your Meraki authentication tests in your Lab or POC.
 
 ## Meraki_Freeradius_UI
-in work
+coming soon
+
+## Meraki Python Library v1 Radius Tools
+coming soon
 
 ## Testmatrix
 
