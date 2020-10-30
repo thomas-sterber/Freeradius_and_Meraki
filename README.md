@@ -45,6 +45,53 @@ Adaptive Policy  MS390
 
 ### Freeradius for Meraki configs
 
+#### Install Freeradius
 
+        #sudo apt-get update
+        #sudo apt-get dist-upgrade
+        #sudo apt-get install freeradius
+        #sudo apt-get install freeradius-utils
+
+#### Freeradius start/stop/autostart , Debug mode
+
+        Check Freeradius service
+	    #sudo service freeradius status
+	    #pgrep freeradius
+
+        Stop service also disable autostart after boot
+	    #sudo service freeradius stop
+
+        Start service also enable autostart after reboot
+	    #sudo service freeradius start
+        Start in Debug Mode
+	    # sudo service freeradius stop
+	    # sudo freeradius -X
+
+#### Basic Freeradius Configuration
+
+        ssh to the Raspberry and login.     (pi/meraki123)
+        >> Backup/move/clear orgiginal configs files
+ 
+	    #mkdir freeradius_backup
+	    #cd freeradius_backup
+	    #sudo su
+	    #cp /etc/freeradius/3.0/users .
+	    #> /etc/freeradius/3.0/users
+	    #cp /etc/freeradius/3.0/clients.conf .
+	    #> /etc/freeradius/3.0/clients.conf
+	    #cp /etc/freeradius/3.0/radiusd.conf .
+	    #cp /etc/freeradius/3.0/mods-available/eap . 
+	    #exit
+        
+        >> modify config-files
+
+	        #sudo vim /etc/freeradius/3.0/mods-available/eap
+         		    change two time 'use_tunneled_reply' to 'yes'
+        		    (EAP-TTLS section and EAP-PEAP section)
+        		    This allows to configure the radius attributes direct in 'users'
+	            use_tunneled_reply = yes    
+
+            #sudo vim /etc/freeradius/3.0/radiusd.conf
+                change 'name = freeradius' to 'name = meraki-freeradius'
 
 
