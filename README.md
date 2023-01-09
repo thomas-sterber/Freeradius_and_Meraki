@@ -2,8 +2,6 @@
 
 This guide is to easily setup a Freeradius which can be used as a AAA for your Meraki authentication tests in your Lab or POC.
 
-## MRadius the CLI-Toolbox
-
 ## Testmatrix
 
 | authentication                    | MR55 (27.5)| MS350 (14.4)| MS390 (14.5)|MX65 (15.38)|
