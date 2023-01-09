@@ -2,14 +2,9 @@
 
 This guide is to easily setup a Freeradius which can be used as a AAA for your Meraki authentication tests in your Lab or POC.
 
-## Meraki_Freeradius_UI
-coming soon
-
-## Meraki Python Library v1 Radius Tools
-coming soon
+## MRadius the CLI-Toolbox
 
 ## Testmatrix
-
 
 | authentication                    | MR55 (27.5)| MS350 (14.4)| MS390 (14.5)|MX65 (15.38)|
 | --------------------------------  | -----| --- |--- | --- |
@@ -42,20 +37,14 @@ Adaptive Policy  MS390
 
 ## Freeradius installation instructions
 
-### Raspberry Pi setup
-    please have a look @ https://github.com/thomas-sterber/Setup_Raspberry_without_mouse_and_keyboard
-    
-
-### Freeradius for Meraki configs
-
-#### Install Freeradius
+### Install Freeradius
 
         #sudo apt-get update
         #sudo apt-get dist-upgrade
         #sudo apt-get install freeradius
         #sudo apt-get install freeradius-utils
 
-#### Freeradius start/stop/autostart , Debug mode
+### Freeradius start/stop/autostart , Debug mode
 
         Check Freeradius service
 		#sudo service freeradius status
@@ -70,7 +59,7 @@ Adaptive Policy  MS390
 		# sudo service freeradius stop
 		# sudo freeradius -X
 
-#### Basic Freeradius Configuration
+### Basic Freeradius Configuration
 
         ssh to the Raspberry and login.     (pi/meraki123)
         
@@ -99,7 +88,7 @@ Adaptive Policy  MS390
             	#sudo vim /etc/freeradius/3.0/radiusd.conf
                 	change 'name = freeradius' to 'name = meraki-freeradius'
 
-#### Test your Freeradius Server
+### Test your Freeradius Server
 
 	#sudo vim /etc/freeradius/3.0/clients.conf
 	
@@ -118,7 +107,7 @@ Adaptive Policy  MS390
 			(user) (pwd) (server ip) (NAS Port) (secret)
 
 
-#### Configure Freeradius 'clients.conf'
+### Configure Freeradius 'clients.conf'
 
 	#sudo vim /etc/freeradius/3.0/clients.conf
 
@@ -129,14 +118,14 @@ Adaptive Policy  MS390
 			}
 
 
-#### Configure Freeradius 'users'
+### Configure Freeradius 'users'
 
-##### MAB	(MR, MS and MX)
+#### MAB	(MR, MS and MX)
 
 		a45046d55355		Cleartext-Password := "a45046d55355"
 		
 		
-##### MAB + VLAN 	(MR and MS)
+#### MAB + VLAN 	(MR and MS)
 	>> VLAN 10
 
 		9829a642667c		Cleartext-Password := "9829a642667c"
@@ -145,19 +134,19 @@ Adaptive Policy  MS390
 					Tunnel-Type = VLAN
 
 
-##### MAB + GroupPolicy   (MR)
+#### MAB + GroupPolicy   (MR)
 
 		e82a44a133c1		Cleartext-Password := "e82a44a133c1"
 					Filter-ID := GroupPolicy_01
 
 
-##### MAB + GroupPolicyACL  (MS)
+#### MAB + GroupPolicyACL  (MS)
 
 		9829a642667c		Cleartext-Password := "9829a642667c"
 					Filter-ID := MSGroupPolicyACL_01
 
 
-##### MAB + VLAN + GroupPolicyACL  (MS)
+#### MAB + VLAN + GroupPolicyACL  (MS)
 	>> VLAN 10
 
 		9829a642667c		Cleartext-Password := "9829a642667c"
@@ -167,19 +156,19 @@ Adaptive Policy  MS390
 					Tunnel-Type = VLAN
 
 
-##### MAB + SGT 100  (MR Wifi-6 and MS390)
+#### MAB + SGT 100  (MR Wifi-6 and MS390)
 	>> SGT 100 = hex 0064
 		
 		9829a642667c		Cleartext-Password := "9829a642667c"
 					Cisco-AVPair = "cts:security-group-tag=0064-00"
 
-##### iPSK		(MR)
+#### iPSK		(MR)
 
 		a45046d55355       	Cleartext-Password := "a45046d55355"
 					Tunnel-password = psk12345
 
 
-##### iPSK + VLAN 		(MR)
+#### iPSK + VLAN 		(MR)
 	>> VLAN 10
 
 		a45046d55355       	Cleartext-Password := "a45046d55355"
@@ -188,14 +177,14 @@ Adaptive Policy  MS390
 					Tunnel-Private-Group-ID = 10,
 					Tunnel-Type = VLAN
 
-##### iPSK + GroupPolicy 		(MR)
+#### iPSK + GroupPolicy 		(MR)
 
 		a45046d55355       	Cleartext-Password := "a45046d55355"
 					Tunnel-password = psk12345,
 					Filter-ID := GPolicy_A
 
 
-##### iPSK + SGT (100)		(MR)
+#### iPSK + SGT (100)		(MR)
 	>> SGT 100 = hex 0064
 	
 		a45046d55355       	Cleartext-Password := "a45046d55355"
@@ -203,12 +192,12 @@ Adaptive Policy  MS390
 					Cisco-AVPair = "cts:security-group-tag=0064-00"
 
 	
-##### 802.1X 		(MR, MS and MX)
+#### 802.1X 		(MR, MS and MX)
 
 		thomas			Cleartext-Password := "sterber"
 
 
-##### 802.1X + VLAN 	(MR, MS)
+#### 802.1X + VLAN 	(MR, MS)
 	>> VLAN 10
 
 		thomas		        Cleartext-Password := "sterber"
@@ -217,19 +206,19 @@ Adaptive Policy  MS390
 					Tunnel-Type = VLAN
 
 
-##### 802.1X + GroupPolicy 	(MR)
+#### 802.1X + GroupPolicy 	(MR)
 
 		thomas   		Cleartext-Password := "sterber"
 					Filter-ID := GroupPolicy_01
 
 
-##### 802.1X + GroupPolicyACL 	(MS)
+#### 802.1X + GroupPolicyACL 	(MS)
 
 		thomas 			Cleartext-Password := "sterber"
 					Filter-ID := MSGroupPolicyACL_01
 
 
-##### 802.1X + VLAN + GroupPolicyACL 	(MS)
+#### 802.1X + VLAN + GroupPolicyACL 	(MS)
 	>> VLAN 10
 		
 		thomas  		Cleartext-Password := "sterber"
@@ -239,7 +228,7 @@ Adaptive Policy  MS390
 					Tunnel-Type = VLAN
 
 
-##### 802.1X + SGT 100 		(MR and MS390)
+#### 802.1X + SGT 100 		(MR and MS390)
 	>> SGT 100 = hex 0064
 	
 		thomas			Cleartext-Password := "sterber"
